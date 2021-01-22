@@ -33,11 +33,7 @@ export class DashboardComponent implements OnInit {
   }
 
   checkLaatsteVijfRitten() {
-    var laatsteRit = this.alleRitten[this.alleRitten.length - 1]
-    this.laatsteVijfRitten.unshift(laatsteRit)
-    if (this.laatsteVijfRitten.length > 5) {
-      this.laatsteVijfRitten.pop()
-    }
-
+    var datumGesorteerdeRitten = this.alleRitten.sort( (a,b) => {return <any>new Date(b.datum) - <any>new Date(a.datum)})
+    this.laatsteVijfRitten = datumGesorteerdeRitten.slice(0,5)
   }
 }
