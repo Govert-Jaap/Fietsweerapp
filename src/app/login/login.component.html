@@ -1,0 +1,11 @@
+<div class="loginForm" fxLayoutAlign="space-around center">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" fxLayout="column" fxLayoutAlign=" center">
+        <input type="text" 
+                placeholder="Emailadres"
+                formControlName="username">
+        <input type="password"
+                 placeholder="Wachtwoord"
+                formControlName="password">
+        <button [disabled]="!loginForm.valid">Inloggen</button>
+    </form>
+</div>

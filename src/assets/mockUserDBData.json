@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "username": "govertjaap@gmail.com",
+            "password": "gjfiets",
+            "admin": false
+        },
+
+        {
+            "username": "admin@admin.com",
+            "password": "admin",
+            "admin": true
+        }
+    ] 
+
+}
