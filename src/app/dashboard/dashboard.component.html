@@ -1,1 +1,22 @@
-<p>dashboard works!</p>
+<div fxLayout="column" fxLayoutAlign="space-between center">
+    <div fxLayout="column"> 
+        <h2>Laatste 5 ritten</h2>
+        <div fxLayout="row">
+            <li *ngFor="let rit of laatsteVijfRitten" fxLayout="column">
+                <ul>Startadres : {{rit.startAdres}}</ul>
+                <ul>Eindadres : {{rit.eindAdres}}</ul>
+                <ul>Afstand: {{rit.afstand}} KM</ul>
+                <ul>Datum: {{rit.datum}}</ul>
+            </li>
+        </div>
+    </div>
+    <div>
+        <form [formGroup]="ritForm" fxLayout="column" fxLayoutAlign="space-between center" (ngSubmit)="onSubmit()">
+            <input type="text" formControlName="startPunt" placeholder="Beginpunt">
+            <input type="text" formControlName="eindPunt" placeholder="Eindpunt">
+            <input type="number" formControlName="afstand" placeholder="Afstand (in km)">
+            <input type="date" formControlName="datum" placeholder="datum"  max="{{date | date:'yyyy-MM-dd'}}">
+            <button>Toevoegen</button>
+        </form>
+    </div>
+</div>
