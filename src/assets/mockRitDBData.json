@@ -1,0 +1,70 @@
+{
+    "ritten": [
+        {
+            "startAdres": "test",
+            "eindAdres": "test",
+            "afstand" : 9,
+            "datum": "2020-01-03T06:48:07",
+            "gebruiker": {
+                "username": "govertjaap@gmail.com",
+                "admin": false
+            } 
+        },
+        {
+            "startAdres": "test",
+            "eindAdres": "test",
+            "afstand" : 12,
+            "datum": "2020-01-07T06:48:07",
+            "gebruiker": {
+                "username": "govertjaap@gmail.com",
+                "admin": false
+            } 
+        },{
+            "startAdres": "test",
+            "eindAdres": "test",
+            "afstand" : 11,
+            "datum": "2019-012-25T06:48:07",
+            "gebruiker": {
+                "username": "govertjaap@gmail.com",
+                "admin": false
+            } 
+        },{
+            "startAdres": "test",
+            "eindAdres": "test",
+            "afstand" : 81,
+            "datum": "2020-01-21T06:48:07",
+            "gebruiker": {
+                "username": "admin@admin.com",
+                "admin": false
+            } 
+        },{
+            "startAdres": "test",
+            "eindAdres": "test",
+            "afstand" : 122,
+            "datum": "2020-01-14T06:48:07",
+            "gebruiker": {
+                "username": "admin@admin.com",
+                "admin": false
+            } 
+        },{
+            "startAdres": "test",
+            "eindAdres": "test",
+            "afstand" : 8,
+            "datum": "2020-01-20T06:48:07",
+            "gebruiker": {
+                "username": "govertjaap@gmail.com",
+                "admin": false
+            } 
+        },{
+            "startAdres": "test",
+            "eindAdres": "test",
+            "afstand" : 15,
+            "datum": "2020-01-05T06:48:07",
+            "gebruiker": {
+                "username": "govertjaap@gmail.com",
+                "admin": false
+            } 
+        }
+
+    ]
+}
