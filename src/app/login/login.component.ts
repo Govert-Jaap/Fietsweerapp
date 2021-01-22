@@ -31,17 +31,11 @@ export class LoginComponent implements OnInit {
     this.httpClient.get("assets/mockUserDBData.json")
       .subscribe (
         result =>{
-          console.log(result); 
-          for(let user in result["users"]) {
-            console.log(user)
-            console.log(user[0])
-            console.log(user["password"])
-            if (user["username"] == this.loginForm.controls.username.value && user["password"] == this.loginForm.controls.password.value ) {
-              var activeUser: User;
-              activeUser.username = user["username"];
-              activeUser.admin = user["admin"];
+          for(let i = 0; i< result["users"].length; i++) {
+            if (result["users"][i]["username"] == this.loginForm.controls.username.value && result["users"][i]["password"] == this.loginForm.controls.password.value ) {
+              var activeUser = {username: result["users"][i]["username"], admin: result["users"][i]["admin"] } as User;
               this.userService.setCurrentUser(activeUser)
-              this.router.navigate["/dashboard"]
+              this.router.navigate(["/dashboard"])
             }
           }
         }) 

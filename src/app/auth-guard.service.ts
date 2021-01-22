@@ -18,8 +18,10 @@ export class AuthGuardService {
 
   checkLoggedIn(): boolean {
   if (this.userService.getCurrentUser()) {
-  return true
+    console.log(true)
+    return true
   }
+  console.log(false)
   this.router.navigate([""]);
   return false
   }
